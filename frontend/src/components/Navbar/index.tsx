@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-md navbar-dark bg-primary main-nav">
       <div className="container-fluid">
         <a href="link" className="nav-logo-text">
-          <h4>Catalog</h4>
+          <h4>DS Catalog</h4>
         </a>
         <button
           className="navbar-toggler"
@@ -19,7 +19,7 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="colapse navbar-collapse" id="catalog-navbar">
+        <div className="collapse navbar-collapse" id="catalog-navbar">
           <ul className="navbar-nav offset-md-2 main-menu">
             <li>
               <a href="link" className="active">
