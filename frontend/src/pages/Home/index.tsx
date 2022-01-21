@@ -1,28 +1,27 @@
 import './styles.css';
 import { ReactComponent as MainImage } from 'assets/images/main-image.svg';
-import Navbar from 'components/Navbar';
+import { Link } from 'react-router-dom';
 import ButtonIcon from 'components/ButtonIcon';
 
 const Home = () => {
   return (
-    <>
-      <Navbar />
-      <div className="home-container">
-        <div className="base-card home-card">
-          <div className="home-content-container">
-            <div>
-              <h1>Find the best catalog of products</h1>
-              <p>We will help you find the best products in the market</p>
-            </div>
+    <div className="home-container">
+      <div className="base-card home-card">
+        <div className="home-content-container">
+          <div>
+            <h1>Find the best catalog of products</h1>
+            <p>We will help you find the best products in the market</p>
+          </div>
+          <Link to="/products">
             <ButtonIcon />
-          </div>
+          </Link>
+        </div>
 
-          <div className="home-image-container">
-            <MainImage />
-          </div>
+        <div className="home-image-container">
+          <MainImage />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
