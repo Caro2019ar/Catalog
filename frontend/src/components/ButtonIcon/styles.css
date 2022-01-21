@@ -1,5 +1,27 @@
-.btn-icon {
-  width: 260px;
-  height: 50px;
+.btn-container {
+  display: flex;
+}
+
+.btn-container button {
+  border-radius: 10px 0 0 10px;
+}
+.btn h6 {
   color: #fff;
+  /* text-transform: uppercase; */
+  font-size: 18px;
+}
+.btn-icon-container {
+  width: 50px;
+  border-radius: 0 10px 10px 0;
+  background-color: #335698;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .btn-icon-container {
+    width: 70px;
+    height: 70px;
+  }
 }
