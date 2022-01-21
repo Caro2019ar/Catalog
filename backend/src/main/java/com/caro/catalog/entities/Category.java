@@ -19,7 +19,7 @@ public class Category implements Serializable {
 
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant updatedAt;
-    
+
     @PrePersist
     public void prePersist(){
         createdAt=Instant.now();
