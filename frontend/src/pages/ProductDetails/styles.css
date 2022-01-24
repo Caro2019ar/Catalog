@@ -32,12 +32,17 @@
 }
 .name-price-container {
   margin-bottom: 20px;
+  padding: 5px;
 }
 .name-price-container h1 {
   font-size: 1.1em;
   letter-spacing: -0.015em;
 }
 .description-container {
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px #e1e1e1 solid;
 }
 
 .description-container h2 {

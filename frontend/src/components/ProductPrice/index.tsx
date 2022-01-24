@@ -7,7 +7,7 @@ type Props = {
 const ProductPrice = ({ price }: Props) => {
   return (
     <div className="product-price-container">
-      <span>R$</span>
+      <span>$</span>
       <h3>{formatPrice(price)}</h3>
     </div>
   );
