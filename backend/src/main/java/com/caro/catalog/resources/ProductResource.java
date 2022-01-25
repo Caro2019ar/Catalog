@@ -3,6 +3,9 @@ package com.caro.catalog.resources;
 import com.caro.catalog.dto.ProductDTO;
 import com.caro.catalog.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -18,8 +21,9 @@ public class ProductResource {
     private ProductService service;
 
     @GetMapping
-    public ResponseEntity<List<ProductDTO>> findAll(){
-        List<ProductDTO> list = service.findAll();
+    public ResponseEntity<Page<ProductDTO>> findAll(Pageable pageable){
+        //parameters with Pageable: page, size, sort
+        Page<ProductDTO> list =service.findAllPaged(pageable);
         return ResponseEntity.ok().body(list);
     }
 
