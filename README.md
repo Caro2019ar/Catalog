@@ -1,5 +1,5 @@
-# Catalog of products - ReactJS (FE) and Java/Spring(BE)
-Small project of a catalog of products
+# Catalog
+Small catalog project of products - ReactJS (FE) and Java/Spring(BE)
 
 ## Front end
 Responsive ReactJS project with Typescript, Bootstrap.
